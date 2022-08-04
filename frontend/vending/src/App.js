@@ -87,7 +87,7 @@ export default function App() {
   return (
    <Routes>
     {userCtx.state.userId ? <>
-     <Route path="/main" element={<Main />} />
+     <Route path="/" element={<Main />} />
      <Route exact path="/:productId" element={<Payment />} />
      <Route path="/cart/:productId" element={<Cart />} />
      <Route path="/qr/:productId" element={<Qr />} />
